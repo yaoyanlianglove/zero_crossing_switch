@@ -132,8 +132,8 @@ void Calculate_Switch_Delay(uint16_t u)
         sw.switchDelayH = 19;
         sw.switchDelayF = 14;
     }
-    sw.switchDelayH = 30 + (20 - sw.switchDelayH);
-    sw.switchDelayF = 20 + (20 - sw.switchDelayF);
+    sw.switchDelayH = 30 + (20 - sw.switchDelayH) - SYSTEM_DELAY;
+    sw.switchDelayF = 20 + (20 - sw.switchDelayF) - SYSTEM_DELAY;
 }
 /*****************************************************************************
  Function    : Task_Read_Oil_Temp

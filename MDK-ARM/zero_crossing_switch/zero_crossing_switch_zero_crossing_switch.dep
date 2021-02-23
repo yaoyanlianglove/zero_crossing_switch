@@ -1,6 +1,6 @@
 Dependencies for Project 'zero_crossing_switch', Target 'zero_crossing_switch': (DO NOT MODIFY !)
 F (startup_stm32f103x6.s)(0x602F2D2C)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_zero_crossing_switch-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F10X_LD SETA 1"--list startup_stm32f103x6.lst --xref -o zero_crossing_switch\startup_stm32f103x6.o --depend zero_crossing_switch\startup_stm32f103x6.d)
-F (..\Src\task.c)(0x60321F45)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Inc/led -I ../Inc/modbus -I ../Inc/switch -I ../Inc/memory -I ../Inc/memory/at24c512 -I ../Inc/oil_temp-I.\RTE\_zero_crossing_switch-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_LD -DUSE_HAL_DRIVER -DSTM32F103x6-o zero_crossing_switch\task.o --omf_browse zero_crossing_switch\task.crf --depend zero_crossing_switch\task.d)
+F (..\Src\task.c)(0x6034C0DF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Inc/led -I ../Inc/modbus -I ../Inc/switch -I ../Inc/memory -I ../Inc/memory/at24c512 -I ../Inc/oil_temp-I.\RTE\_zero_crossing_switch-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_LD -DUSE_HAL_DRIVER -DSTM32F103x6-o zero_crossing_switch\task.o --omf_browse zero_crossing_switch\task.crf --depend zero_crossing_switch\task.d)
 I (../Inc/task.h)(0x6029DBE7)
 I (../Inc/main.h)(0x602F2D2A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5FD94FE4)
@@ -35,7 +35,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5FD94FE4)
 I (../Inc/tim.h)(0x602F2D2A)
 I (../Inc/modbus/modbus.h)(0x60321BA2)
 I (../Inc/modbus/modbus_interface.h)(0x602B2805)
-I (../Inc/switch/switch.h)(0x60321D02)
+I (../Inc/switch/switch.h)(0x6034C0C5)
 I (../Inc/led/led.h)(0x602C70C8)
 I (../Inc/oil_temp/oil_temp.h)(0x602C9DA5)
 I (../Inc/memory/memory.h)(0x602C99DA)
@@ -72,10 +72,10 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5FD94FE4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5FD94FE4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5FD94FE4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5FD94FE4)
-I (../Inc/switch/switch.h)(0x60321D02)
+I (../Inc/switch/switch.h)(0x6034C0C5)
 F (..\Src\modbus\modbus_interface.c)(0x60321D09)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Inc/led -I ../Inc/modbus -I ../Inc/switch -I ../Inc/memory -I ../Inc/memory/at24c512 -I ../Inc/oil_temp-I.\RTE\_zero_crossing_switch-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_LD -DUSE_HAL_DRIVER -DSTM32F103x6-o zero_crossing_switch\modbus_interface.o --omf_browse zero_crossing_switch\modbus_interface.crf --depend zero_crossing_switch\modbus_interface.d)
 I (../Inc/modbus/modbus_interface.h)(0x602B2805)
-I (../Inc/switch/switch.h)(0x60321D02)
+I (../Inc/switch/switch.h)(0x6034C0C5)
 I (../Inc/main.h)(0x602F2D2A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5FD94FE4)
 I (../Inc/stm32f1xx_hal_conf.h)(0x602F2D2A)
@@ -347,7 +347,7 @@ I (../Inc/tim.h)(0x602F2D2A)
 I (../Inc/usart.h)(0x602F2D2A)
 I (../Inc/gpio.h)(0x602F2D29)
 I (../Inc/task.h)(0x6029DBE7)
-I (../Inc/switch/switch.h)(0x60321D02)
+I (../Inc/switch/switch.h)(0x6034C0C5)
 I (../Inc/modbus/modbus_interface.h)(0x602B2805)
 F (../Src/gpio.c)(0x602F2D29)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Inc/led -I ../Inc/modbus -I ../Inc/switch -I ../Inc/memory -I ../Inc/memory/at24c512 -I ../Inc/oil_temp-I.\RTE\_zero_crossing_switch-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_LD -DUSE_HAL_DRIVER -DSTM32F103x6-o zero_crossing_switch\gpio.o --omf_browse zero_crossing_switch\gpio.crf --depend zero_crossing_switch\gpio.d)
 I (../Inc/gpio.h)(0x602F2D29)
@@ -1082,8 +1082,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5FD94FE4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5FD94FE4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5FD94FE4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5FD94FE4)
-F (..\Src\switch\switch.c)(0x60306BFE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Inc/led -I ../Inc/modbus -I ../Inc/switch -I ../Inc/memory -I ../Inc/memory/at24c512 -I ../Inc/oil_temp-I.\RTE\_zero_crossing_switch-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_LD -DUSE_HAL_DRIVER -DSTM32F103x6-o zero_crossing_switch\switch.o --omf_browse zero_crossing_switch\switch.crf --depend zero_crossing_switch\switch.d)
-I (../Inc/switch/switch.h)(0x60321D02)
+F (..\Src\switch\switch.c)(0x60322534)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Inc/led -I ../Inc/modbus -I ../Inc/switch -I ../Inc/memory -I ../Inc/memory/at24c512 -I ../Inc/oil_temp-I.\RTE\_zero_crossing_switch-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_LD -DUSE_HAL_DRIVER -DSTM32F103x6-o zero_crossing_switch\switch.o --omf_browse zero_crossing_switch\switch.crf --depend zero_crossing_switch\switch.d)
+I (../Inc/switch/switch.h)(0x6034C0C5)
 I (../Inc/main.h)(0x602F2D2A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5FD94FE4)
 I (../Inc/stm32f1xx_hal_conf.h)(0x602F2D2A)
@@ -1116,7 +1116,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5FD94FE4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5FD94FE4)
 I (../Inc/memory/memory.h)(0x602C99DA)
 I (../Inc/delay.h)(0x5E069909)
-F (..\Src\test_circle\switch.c)(0x60306C93)()
+F (..\Src\test_circle\switch.c)(0x603225AE)()
 I (../Inc/switch/switch.h)(0x602CAB87)
 I (../Inc/main.h)(0x6028B7C0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5FD94FE4)

@@ -22,6 +22,7 @@
 #define LOW   0
 #define HIGH  1  
 #define REMOTE_SIGNAL_DELAY 10 //MS
+#define SYSTEM_DELAY        2  //MS
 
 
 
