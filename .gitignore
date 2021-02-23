@@ -52,5 +52,6 @@ Mkfile.old
 dkms.conf
 
 #keil
-MDK-ARM/yzty/
+#MDK-ARM/zero_crossing_switch/
+#MDK-ARM/zero_crossing_switch_test/
 MDK-ARM/JLinkLog.txt
