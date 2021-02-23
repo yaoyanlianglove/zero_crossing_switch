@@ -1,7 +1,5 @@
-# yzty
-This project is about the control procedure of transformer on load voltage regulating switch.
+# zero-crossing-switch
 
-V1.0.0.2
-Add STEP-MOTOR 9 gear.
+过零投切开关程序。
 
-TEST
+
