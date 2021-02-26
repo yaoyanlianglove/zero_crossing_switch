@@ -383,7 +383,7 @@ void Step_First(void)
             sw.currentCmd = OPEN;
         }
     }
-    //等待过零点，如果50ms内未出现过零点，此次命令失效+++++++++++++++++++++++
+    //没有过零点，500ms遥信确认时间，开关动作+++++++++++++++++++++++
     else 
     {
         if(sw.cmdTimeoutCount < 50)
@@ -398,6 +398,8 @@ void Step_First(void)
         {
             if(sw.zeroUFlag == TRUE)
             {
+                sw.noZeroOpenCount = 0;
+                sw.noZeroCloseCount = 0;
                 sw.cmdTimeoutCount  = 0;
                 sw.zeroUFlag        = FALSE;
                 sw.step             = FIRST_DELAY;
@@ -407,13 +409,48 @@ void Step_First(void)
         {
             if(sw.zeroIFlag == TRUE)
             {
+                sw.noZeroOpenCount = 0;
+                sw.noZeroCloseCount = 0;
                 sw.cmdTimeoutCount  = 0;
                 sw.zeroIFlag        = FALSE;
                 sw.step             = FIRST_DELAY;
             }
         }  
+        if(sw.zeroIFlag == FALSE && sw.zeroUFlag == FALSE) //没有过零点
+        {
+            if(sw.closeSignal == 1 && sw.openSignal == 0  && sw.switchSignal == 2)  //读取合闸命令
+            {
+                sw.noZeroOpenCount = 0;
+                if(sw.noZeroCloseCount < REMOTE_SIGNAL_DELAY_NO_ZERO)
+                    sw.noZeroCloseCount ++;
+                else
+                {
+                    sw.noZeroCloseCount = 0;
+                    sw.step             = FIRST_DELAY;
+                    sw.currentCmd       = CLOSE;
+                }
+            }
+            else if(sw.closeSignal == 0 && sw.openSignal == 1 && sw.switchSignal == 1)//读取分闸命令
+            {
+                sw.noZeroCloseCount = 0;
+                if(sw.noZeroOpenCount < REMOTE_SIGNAL_DELAY_NO_ZERO)
+                    sw.noZeroOpenCount ++;
+                else
+                {
+                    sw.noZeroOpenCount  = 0;
+                    sw.step             = FIRST_DELAY;
+                    sw.currentCmd       = OPEN;
+                }
+            }
+            else
+            {
+                sw.noZeroOpenCount = 0;
+                sw.noZeroCloseCount = 0;
+            }
+        }
+        
     }
-    //等待过零点，如果50ms内未出现过零点，此次命令失效+++++++++++++++++++++++ 
+    //没有过零点，500ms遥信确认时间，开关动作+++++++++++++++++++++++
 }
 /*****************************************************************************
  Function    : Step_Second

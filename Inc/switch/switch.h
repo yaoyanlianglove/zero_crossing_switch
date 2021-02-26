@@ -23,6 +23,8 @@
 #define HIGH  1  
 #define REMOTE_SIGNAL_DELAY 10 //MS
 #define SYSTEM_DELAY        2  //MS
+#define REMOTE_SIGNAL_DELAY_NO_ZERO 500//ms
+
 
 
 
@@ -122,6 +124,10 @@ typedef struct
     uint16_t  temp;                                     //温度
     uint8_t switchDelayH;                               //合作开关延时
     uint8_t switchDelayF;                               //分闸开关延时
+
+    //无过零点参数
+    uint16_t noZeroOpenCount;                           //分闸命令持续时间计数
+    uint16_t noZeroCloseCount;                          //合闸命令持续时间计数
 }SwitchTypeDef;
 
 void Switch_Goto_Pre(void);
